@@ -3,7 +3,7 @@ html, body {
   padding: 0px;
   height: 100%;
   width: 100%;
-  background: url(rakibtg.jpeg) no-repeat center center fixed; 
+  background: url(rakibtg.jpeg) no-repeat center bottom fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
