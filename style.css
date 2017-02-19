@@ -11,7 +11,22 @@ html, body {
 }
 
 div.container {
-  height: 100%;
-  width: 100%;
-  background-color: rgba(175, 175, 175, 0.5);
+  height: inherit;
+  background-color: rgba(175, 175, 175, 0.3);
+  font-family: 'Droid Serif', serif;
+  padding-top: 100px;
+}
+
+div.main-title {
+  text-align: center;
+  font-size: 80px;
+  font-family: 'Sansita', sans-serif;
+  color: #d4bdf1;
+}
+
+div.about {
+  text-align: center;
+  font-size: 23px;
+  color: #d6d2a9;
+  padding-top: 30px;
 }
