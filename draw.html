@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw Lock</title>
+    <style>
+        html, body {
+            margin: 0px; padding: 0px;
+            height: 100%;
+            overflow: hidden;
+            text-align: center;
+
+        }
+        img {
+            width: auto;
+            height: 100%;
+            user-select: none;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -o-user-select: none;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <img src="" alt="">
+    <input type="file" oninput="handleChange(event)">
+    <script>
+        function handleChange (event) {
+            const [ img ] = event.target.files
+            var reader = new FileReader()
+
+            reader.onload = function (e) {
+                document.querySelector('img').src = e.target.result
+            }
+
+            reader.readAsDataURL(img)
+            document.querySelector('input').remove()
+        }
+    </script>
+</body>
+</html>
